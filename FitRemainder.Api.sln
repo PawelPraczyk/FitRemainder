@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitRemainder.Api", "FitRemainder.Api\FitRemainder.Api.csproj", "{79575A88-E5C3-4928-B6C8-53FD77400956}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitRemainder.Core", "FitRemainder.Core\FitRemainder.Core.csproj", "{C159EC95-3DF2-4039-9CD6-4BA5CA0551E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitRemainder.Infrastructure", "FitRemainder.Infrastructure\FitRemainder.Infrastructure.csproj", "{EC052BE5-F708-4617-BC52-901BC8C8020E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C159EC95-3DF2-4039-9CD6-4BA5CA0551E2} = {C159EC95-3DF2-4039-9CD6-4BA5CA0551E2}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitRemainder.Tests", "FitRemainder.Tests\FitRemainder.Tests.csproj", "{8F011852-7BB6-4F5C-8B79-596E40DEFD64}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C159EC95-3DF2-4039-9CD6-4BA5CA0551E2} = {C159EC95-3DF2-4039-9CD6-4BA5CA0551E2}
+		{EC052BE5-F708-4617-BC52-901BC8C8020E} = {EC052BE5-F708-4617-BC52-901BC8C8020E}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitRemainder.Tests.EndToEnd", "FitRemainder.Tests.EndToEnd\FitRemainder.Tests.EndToEnd.csproj", "{31056A57-C35F-4DFA-B9D0-9C8BFB64B60D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79575A88-E5C3-4928-B6C8-53FD77400956}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79575A88-E5C3-4928-B6C8-53FD77400956}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79575A88-E5C3-4928-B6C8-53FD77400956}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79575A88-E5C3-4928-B6C8-53FD77400956}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C159EC95-3DF2-4039-9CD6-4BA5CA0551E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C159EC95-3DF2-4039-9CD6-4BA5CA0551E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C159EC95-3DF2-4039-9CD6-4BA5CA0551E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C159EC95-3DF2-4039-9CD6-4BA5CA0551E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC052BE5-F708-4617-BC52-901BC8C8020E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC052BE5-F708-4617-BC52-901BC8C8020E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC052BE5-F708-4617-BC52-901BC8C8020E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC052BE5-F708-4617-BC52-901BC8C8020E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F011852-7BB6-4F5C-8B79-596E40DEFD64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F011852-7BB6-4F5C-8B79-596E40DEFD64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F011852-7BB6-4F5C-8B79-596E40DEFD64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F011852-7BB6-4F5C-8B79-596E40DEFD64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31056A57-C35F-4DFA-B9D0-9C8BFB64B60D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31056A57-C35F-4DFA-B9D0-9C8BFB64B60D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31056A57-C35F-4DFA-B9D0-9C8BFB64B60D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31056A57-C35F-4DFA-B9D0-9C8BFB64B60D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8055A711-8417-4820-805A-F90E057376F8}
+	EndGlobalSection
+EndGlobal
